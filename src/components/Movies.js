@@ -2,7 +2,7 @@ import React from "react";
 import Movie from "./Movie";
 
 const Movies = props => {
-  console.log(props.movies);
+  // console.log(props.movies);
 
   return (
     <ul className="movies">

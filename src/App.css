@@ -40,7 +40,6 @@ ul {
 
 .movies {
   margin-top: 30px;
-  background-color: #f4f4f4;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -78,4 +77,13 @@ ul {
   -webkit-line-clamp: 9;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.pagination {
+  justify-content: center;
+  padding: 20px 0px 50px;
+}
+.pagination li {
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 1.5rem;
 }
