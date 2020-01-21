@@ -1,38 +1,80 @@
-.App {
-  text-align: center;
+.container {
+  background-color: #f4f4f4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  margin: 0 auto;
+  width: 96vw;
+  max-width: 1000px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: #fecb00;
+  height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  margin: 30px 0;
+}
+.menu li {
+  margin-right: 20px;
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.menu li.active {
+  text-decoration: underline;
+}
+
+.movies {
+  margin-top: 30px;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.movies li {
+  width: calc(50% - 20px);
+  margin-bottom: 30px;
+}
+
+.movie {
+  display: flex;
+  box-shadow: 1px 1px 5px #ccc;
+  background-color: #fff;
+  height: 250px;
+}
+.movie .infos {
+  padding: 0 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+.movie img {
+  object-fit: cover;
+}
+.movie .infos h2 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: #000;
+}
+.movie .infos span {
+  font-size: 1rem;
+  color: darkgrey;
+}
+.movie .infos p {
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
