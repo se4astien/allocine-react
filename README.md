@@ -1,3 +1,20 @@
+# Allocine Tabs
+
+Create a list of movies with tabs. Using React for the structure and Axios to get the API.
+
+## Installation
+
+Use terminal et npm to install dependancies.
+
+```javascript
+npx create-react-app allocine-tabs
+npm install axios
+```
+
+## Deploy
+Here a link to see the project: https://allocine-with-react.netlify.com/
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
