@@ -7,6 +7,7 @@ const Menu = props => {
         className={props.selected === "popular" ? "active" : ""}
         onClick={() => {
           props.setSelected("popular");
+          // équivaut à faire => props.fetch("popular");
         }}
       >
         Popular movies
@@ -15,6 +16,7 @@ const Menu = props => {
         className={props.selected === "upcoming" ? "active" : ""}
         onClick={() => {
           props.setSelected("upcoming");
+          // équivaut à faire => props.fetch("upcoming");
         }}
       >
         Upcoming movies
@@ -23,6 +25,7 @@ const Menu = props => {
         className={props.selected === "top_rated" ? "active" : ""}
         onClick={() => {
           props.setSelected("top_rated");
+          // équivaut à faire => props.fetch("top_rated");
         }}
       >
         Top rated movies
