@@ -7,11 +7,12 @@ import Menu from "./components/Menu";
 import Movies from "./components/Movies";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(false); // chargement de l'API
+  const [isLoading, setIsLoading] = useState(false); // au chargement de l'API
+  // 1. Qu'est ce qui change dans la page ?
   const [movies, setMovies] = useState([]); // la liste des films
   const [selectedTab, setSelectedTab] = useState("popular"); // l'onglet à selectionner par default
 
-  // 1. On va faire un appel à l'API avec Axios
+  // 2. On déclare la fonction qui va faire un appel à l'API pour récupérer les données
   const fetchData = async () => {
     try {
       // On charge les données
@@ -30,9 +31,10 @@ function App() {
   };
 
   // Le tableau vide indiquera à React d'executer cet effet seulement au premier chargement du composant (étape de création)
+  // 3. On va maintenant charger les données uniquement à la création du composant
   useEffect(() => {
-    fetchData(selectedTab); // On dit à React quelle varibale il doit surveiller
-  }, [selectedTab]); // On affiche l'API correspondant à l'onglet selectionné
+    fetchData(selectedTab); // fetchData exécute la variable selectedTab
+  }, [selectedTab]); // Le tableau indique à React quelles variables il doit surveiller pour déclencher l'effet
 
   return (
     <div className="container">
