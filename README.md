@@ -14,8 +14,10 @@ npm install axios
 ## Deploy
 Here a link to see the project: https://allocine-with-react.netlify.com/
 
+## Screenshots
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![](https://github.com/se4astien/allocine-react/blob/master/src/screenshots/allocine-01.png)
+
 
 ## Available Scripts
 
