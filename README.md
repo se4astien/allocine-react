@@ -1,6 +1,6 @@
 # Allocine Tabs with React Hooks
 
-Create a list of movies with tabs. Using React for the structure and Axios to get the API.
+Display a list of movies with tabs. Using React for the structure and Axios to get the API.
 
 ## Installation
 
